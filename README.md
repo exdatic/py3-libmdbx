@@ -16,5 +16,8 @@ There are two options:
 Requirements
 ============
 
-Ctypes for the Python code itself.
 libmdbx for the functionality.
+
+```bash
+git clone https://github.com/erthink/libmdbx.git || cd libmdbx && make && cp libmdbx.so /usr/lib/ 
+```

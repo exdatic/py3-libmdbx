@@ -24,7 +24,7 @@ import errno
 import os
 
 # init lib
-_lib = ctypes.CDLL("@MDBX_SOLIB_LOCATION@")
+_lib = ctypes.CDLL(os.environ.get("MDBX_LIB_LOCATION", "/usr/lib/libmdbx.so"))
 
 # Names are all CamelCase because PEP 8 states class names have to be CamelCase.
 # Abbreviations like TXN (although they are native class names) are capitalized because of PEP 8, too.
